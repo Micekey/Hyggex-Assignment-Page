@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* In your CSS or SCSS file */
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.bg-gradient-text {
+  background: linear-gradient(180deg, #06286e 0%, #164ec0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+  @apply inline-flex justify-center items-center gap-40;
+  color: #06286e;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.eqn {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@layer utilities {
+  .custom-text-style {
+    color: #202B37;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* Note: Tailwind does not have direct classes for text-edge and leading-trim */
+  }
+}
